@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-snap-align: start;
+            scroll-snap-type: y mandatory;
+        }
+        body {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <video id="preview-video" class="hide" muted></video>
+    <header>
+        <a href="#home" class="logo"></a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="Main Image">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Bhavya</span></h1>
+            <h3 class="text-typing">I'm a <span class="typewrite" data-period="2000" data-type='["Web Developer", "Software Engineer", "Content Creator", "Graphic Designer"]'></span></h3>
+            <p>I'm Bhavya Gujral, a motivated and curious individual with a passion for technology and innovation. I thrive in dynamic environments, enjoy solving complex problems, and have a strong drive for continuous learning. My leadership skills, team spirit, and ability to adapt make me confident in tackling new challenges and contributing effectively to any project.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bhavya-gujral-737a18241/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:bhavya.gujral2608@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+                <a href="https://github.com/bhavyagujral26"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/bhavya.gujral26/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://leetcode.com/u/CKkHI54Lub/"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="home-content"><h1>About Me</h1></div>
+        <div class="about-container">
+            <div class="about-left">
+                <p>I'm Bhavya Gujral, a passionate tech enthusiast from Agra, Uttar Pradesh. Currently pursuing a Bachelor's of Engineering in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning (Hons.) at Chandigarh University, I am driven by curiosity and the desire to create impactful solutions.</p>
+                <p>With hands-on experience as a Web Development Intern at VVDN Tech Pvt. Ltd., I contributed to website redesigns, enhancing aesthetics, usability, and implementing cross-browser compatible features. Additionally, my freelance journey on Freelancer.com allowed me to tackle projects related to app development, product research, and testing, fostering my adaptability and problem-solving skills.</p>
+                <p>My technical repertoire includes Python, JavaScript, C/C++, and frameworks like React.js, Node.js, and Tailwind CSS. I've developed innovative projects, such as a Self-Improving Python Program using Genetic Algorithms, a Secret Knock Detection Door, and Gesture-Controlled Navigation using Python's OpenCV.</p>
+                <p>Beyond coding, I'm a strong leader, motivational speaker, and team player, always eager to inspire others while continuously learning and exploring emerging technologies like Docker and Kubernetes.</p>
+            </div>
+            <div class="about-right">
+                <h2>Education</h2>
+                <p><strong>Chandigarh University</strong> (August 2022 - May 2026)<br>
+                Bachelor's of Engineering in Computer Science Engineering<br>
+                Specialization: Artificial Intelligence and Machine Learning (Hons.)</p>
+    
+                <p><strong>Air Force School, Agra</strong> (March 2020 - May 2022)<br>
+                Senior Secondary School - PCM + Biotechnology</p>
+    
+                <h3>Certifications & Achievements</h3>
+                <ul>
+                    <li>The Science of Well-Being - Yale University</li>
+                    <li>Introduction to Big Data with Spark and Hadoop - IBM</li>
+                    <li>Machine Learning for All - University of London</li>
+                    <li>Microsoft Certified: Azure AI Fundamentals</li>
+                    <li>Oracle Generative AI</li>
+                    <li>Finalist in Smart India Hackathon 2024</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .about-section {
+        padding: 5rem 9%;
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .about-container {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+    
+    .about-left, .about-right {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    .about-left p, .about-right p, .about-right ul {
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-right h2, .about-right h3 {
+        font-size: 2.5rem;
+        color: #b74b4b;
+        margin-bottom: 1rem;
+    }
+    
+    .about-right ul {
+        list-style: disc;
+        margin-left: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+        }
+    }
+    </style>
+    
+    
+
+
+    <section id="skills" class="skills-section">
+        <div class="home-content"><h1>My Skills</h1></div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h2>Programming Languages</h2>
+                <div class="skill"><i class="fa-solid fa-code"></i><p>C/C++</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-java"></i><p>Java</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+    
+                <div class="skill"><i class="fa-solid fa-database"></i><p>MySQL</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+            </div>
+    
+            <div class="skill-category">
+                <h2>Frameworks & Libraries</h2>
+                <div class="skill"><i class="fa-brands fa-node"></i><p>Node.js</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-react"></i><p>Material UI</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 78%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-css3"></i><p>Tailwind CSS</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+            </div>
+    
+            <div class="skill-category">
+                <h2>Tools & Technologies</h2>
+                <div class="skill"><i class="fa-brands fa-git-alt"></i><p>Git & GitHub</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+    
+                <div class="skill"><i class="fa-solid fa-laptop-code"></i><p>Visual Studio Code</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+    
+                <div class="skill"><i class="fa-solid fa-database"></i><p>Firebase</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+    
+                <div class="skill"><i class="fa-brands fa-docker"></i><p>Docker & Kubernetes</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+            </div>
+    
+            <div class="skill-category">
+                <h2>Soft Skills</h2>
+                <div class="skill"><i class="fa-solid fa-users"></i><p>Team Management</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+    
+                <div class="skill"><i class="fa-solid fa-chalkboard-teacher"></i><p>Leadership</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+    
+                <div class="skill"><i class="fa-solid fa-bullhorn"></i><p>Motivational Speaking</p></div>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+            </div>
+        </div>
+    </section>
+        
+    
+    
+
+    <section id="projects" class="portfolio">
+        <div class="home-content"><h1>My Projects</h1></div>
+        
+        <div id="project-buttons">
+            <button class="button-value active" onclick="filterProjects('all')">All</button>
+            <button class="button-value" onclick="filterProjects('Web Development')">Web Development</button>
+            <button class="button-value" onclick="filterProjects('Mobile App')">Mobile App</button>
+            <button class="button-value" onclick="filterProjects('Machine Learning')">Machine Learning</button>
+            <button class="button-value" onclick="filterProjects('Game Development')">Game Development</button>
+        </div>
+    
+            
+            <div class="portfolio-items" id="project-list"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Bhavya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
